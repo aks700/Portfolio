@@ -1,0 +1,35 @@
+<div class="card card-layout" style="max-width: 350px; min-width: 350px;">
+  <div class="card-body">
+    <h5 class="card-title">{{ card.name }}</h5>
+    <p class="card-text">{{ card.summary }}</p>
+    <button class="button-small" (click)="openCardModal()">View More</button>
+  </div>
+</div>
+
+
+<div class="custom-modal-overlay" *ngIf="isModalOpen" (click)="closeCardModal()">
+  <div class="custom-modal-content" (click)="$event.stopPropagation()">
+    <div class="custom-modal-header">
+      <h2 class="modal-title">{{ card.name }}</h2>
+      <button class="close-button" (click)="closeCardModal()">x</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="image-viewer" *ngIf="card.pictures.length > 0">
+        <img [src]="card.pictures[currentImageIndex]" alt="Project Image" class="viewer-image" />
+      </div>
+
+      <div class="content-section">
+        <h3 class="section-heading">Description</h3>
+        <p class="section-text">{{ card.description }}</p>
+
+        <p class="section-text">
+          <strong><span class="default-highlight">Github: </span></strong>
+          <a *ngIf="card.projectLink" [href]="card.projectLink" target="_blank" rel="noopener" class="github-link">{{
+            card.projectLink }}</a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>

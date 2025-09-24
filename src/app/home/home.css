@@ -1,0 +1,56 @@
+.text-left {
+    margin: 0;
+    padding: 4rem 2rem;
+    text-align: left;
+}
+
+.home-title {
+    font-size: 5rem;
+    color: #e0f0ff;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.home-author {
+    font-size: 3.5rem;
+    color: #b0caf063;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.home-description {
+    font-size: 1.25rem;
+    color: #b0caf0;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+
+#text {
+    border-right: none;
+    padding-right: 5px;
+    color: aqua;
+}
+
+
+button a {
+    text-decoration: none;
+    color: aqua;
+}
+
+
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .home-author {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .home-description {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,52 @@
+<div class="panel-container">
+  <div class="panel">
+    <button class="panel-header" (click)="toggle(0)">
+      Languages
+    </button>
+    <div class="panel-body" [class.show]="isOpen(0)">
+      <p>Fluent <strong><span class="default-highlight">English</span></strong>
+      <p>Native <strong><span class="default-highlight">Hindi</span></strong></p>
+    </div>
+  </div>
+  <br />
+
+  <div class="panel">
+    <button class="panel-header" (click)="toggle(1)">
+      University
+    </button>
+    <div class="panel-body" [class.show]="isOpen(1)">
+      <p>2025 - Maharaja Agrasen Institute of Technology - <strong><span class="default-highlight">Computer
+            Science(AIML)</span></strong> - Bachelor's Degree</p>
+      <p>2021 - Montfort Senior Secondary School - <strong><span class="default-highlight">PCM with IT</span></strong> -
+        Higher Secondary</p>
+      <p>2019 - Montfort Senior Secondary School - <strong><span class="default-highlight">Regular</span></strong> -
+        High School</p>
+
+    </div>
+  </div>
+  <br />
+
+  <div class="panel">
+    <button class="panel-header" (click)="toggle(2)">
+      Techs I use
+    </button>
+    <div class="panel-body" [class.show]="isOpen(2)">
+      <div class="tech-board">
+        <div class="tech-cell"><i class="devicon-html5-plain colored"></i></div>
+        <div class="tech-cell"><i class="devicon-css3-plain colored"></i></div>
+        <div class="tech-cell"><i class="devicon-javascript-plain colored"></i></div>
+        <div class="tech-cell"><i class="devicon-cplusplus-plain colored"></i></div>
+        <div class="tech-cell"><i class="devicon-java-plain colored"></i></div>
+        <div class="tech-cell"><i class="devicon-python-plain colored"></i></div>
+        <div class="tech-cell"><i class="devicon-tensorflow-original colored"></i></div>
+        <div class="tech-cell"><i class="devicon-mongodb-plain colored"></i></div>
+        <div class="tech-cell"><i class="devicon-git-plain colored"></i></div>
+        <div class="tech-cell"><i class="devicon-github-original colored"></i></div>
+        <div class="tech-cell"><i class="devicon-android-plain colored"></i></div>
+        <div class="tech-cell"><i class="devicon-vscode-plain colored"></i></div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
